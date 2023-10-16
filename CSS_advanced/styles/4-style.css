@@ -1,0 +1,51 @@
+/* Custom Properties on the :root element */
+:root {
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	--font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  
+  /* Content from 1-style.css */
+  html {
+	scroll-behavior: smooth;
+  }
+  
+  /* New Declarations */
+  /* Set the foreground color value to #161616 for the body */
+  body {
+	color: var(--text-color);
+	font-family: var(--font-family-base); /* Apply font-family */
+  }
+  
+  /* Set the foreground color value to #161616 for all anchor elements */
+  a {
+	color: var(--text-color);
+	font-family: var(--font-family-base); /* Apply font-family */
+  }
+  
+  /* All elements with the class visually-hidden should have their display set to none */
+  .visually-hidden {
+	display: none;
+  }
+  
+  /* Reset the color for elements with the class section-tagline to color-primary */
+  .section-tagline {
+	color: var(--color-primary);
+	font-family: var(--font-family-title); /* Apply font-family */
+  }
+  
+  /* Reset the color for elements with the class card-category to color-primary */
+  .card-category {
+	color: var(--color-primary);
+	font-family: var(--font-family-title); /* Apply font-family */
+  }
+  
+  /* Section Headings - Set font-family to font-family-title */
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
+  }  
